@@ -544,6 +544,20 @@ section {
 	z-index: -1;
 }
 
+.skill-tree-controls {
+	background: #151c26;
+}
+
+.skill-tree-controls .show-tag svg {
+	transform: rotate(-90deg); transform-origin: center center;
+}
+
+.skill-tree-controls .display-controls label {
+	border: solid 1px #222;
+	background: #0c69f3;
+	color: white;
+}
+
 
 
 
@@ -832,6 +846,18 @@ footer .z-zero {
 
 
 
+/*PARTICLES CONTAINER*/
+#particles_container {
+	background: none !important;
+	background-image: none !important;
+	display: none;
+}
+
+
+
+
+
+
 /*ACTIONS*/
 .resume-container:hover .resume-preview {
 	display: block !important;
@@ -962,19 +988,28 @@ footer .z-zero {
 	display: block !important;
 }
 
-
 .contact-card:has(a[id="mailto"]:hover) .icon-container .email-ico {
 	display: flex !important;
 }
-
 
 .contact-card:has(a[id="to_linkedin"]:hover) .icon-container .linkedin-ico {
 	display: flex !important;
 }
 
-
 .contact-card:has(a.github-group:hover) .icon-container .github-ico {
 	display: flex !important;
+}
+
+.skill-tree-controls .display-controls label:hover {
+	background: #0A5CCE;
+}
+
+#skill_tree_state:checked ~ label .hide-tag {
+	display: flex !important;
+}
+
+#skill_tree_state:checked ~ label .show-tag {
+	display: none !important;
 }
 
 
@@ -1041,7 +1076,6 @@ footer .z-zero {
 .left-entrance-1 {
 	animation: leftSlideIn 1s ease-out forwards;
 }
-
 
 .timeline-item-1-header {
 	background-size: 200% 200%;
